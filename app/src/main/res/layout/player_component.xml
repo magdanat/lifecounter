@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:showIn="@layout/activity_main">
+
+    <!-- Player Text -->
+    <LinearLayout
+            android:id="@+id/playerText"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/buttons"
+            app:layout_constraintEnd_toEndOf="@+id/buttons"
+            app:layout_constraintStart_toStartOf="@+id/buttons"
+            android:layout_marginLeft="8dp">
+
+        <!-- Player Name -->
+        <TextView
+                android:id="@+id/player"
+                android:text="Player"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <!-- Player Score -->
+        <TextView
+                android:id="@+id/health"
+                android:text="Health"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+
+
+    <!-- Buttons -->
+    <LinearLayout
+            android:id="@+id/buttons"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp">
+
+        <!-- Gain One Health -->
+        <Button
+                android:id="@+id/plus_one"
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+        />
+
+        <!-- Gain 5 Health -->
+        <Button
+                android:id="@+id/plus_five"
+                android:text="+5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <!-- Lose One Health -->
+        <Button
+                android:id="@+id/minus_one"
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <!-- Lose 5 Health -->
+        <Button
+                android:id="@+id/minus_five"
+                android:text="-5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
